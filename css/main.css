@@ -1,0 +1,508 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/****** WRITE YOUR CODE HERE PANTS!! ********/
+
+/****** 
+
+Color Codes:
+Dark Grey: #2e2e2e
+Lighter Grey: #808181
+Blue: #03deff
+Orange: #ff8003
+Green: #95ff78
+
+*****/
+
+/*
+===================================================================
+BASIC STYLES
+===================================================================
+*/
+
+html, body {
+	font-size: 16px;
+	background-color: #2e2e2e;
+}
+
+.full-width {
+	width: 94%;
+	margin: 0 3%;
+}
+
+/*
+===================================================================
+MOBILE STYLES
+===================================================================
+*/
+
+/***** HEADER STYLES *****/
+
+#logo {
+	width: 100%;
+}
+
+nav ul li {
+	list-style: none;
+	text-align: center;
+	font-size: 1.25em;
+}
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+nav ul li a:hover {
+	color: #95ff78;
+}
+
+.hustle-img {
+	width: 100%;
+}
+
+header h2 {
+	color: #fff;
+	padding-bottom: 10px;
+}
+
+header h2 span {
+	color: #808181;
+}
+
+/***** ABOUT ME STYLES *****/
+
+#about {
+	background-color: #fff;
+	margin-bottom: -20px;
+	padding: 5px 0 20px 0;
+}
+
+#about .half-width {
+	display: flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	width: 100%;
+}
+
+#about .paragraph {
+	display: flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	justify-content: flex-start;
+	width: 100%;
+	font-size: .875em;
+}
+
+/***** PORTFOLIO STYLES *****/
+
+#work {
+	background-color: #95ff78;
+}
+
+#work .des-head {
+	padding-top: 20px;
+}
+
+#work .design-portfolio, #work .developer-portfolio {
+	display: flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	width: 100%;
+	flex-direction: column;
+}
+
+#work .design-portfolio .flex-pics, #work .developer-portfolio .flex-pics {
+	display: flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	width: 100%;
+	justify-content: center;
+}
+
+#work .design-portfolio .flex-pics img, #work .developer-portfolio .flex-pics img {
+	max-width: 500px;
+	margin-bottom: 3%;
+}
+
+/***** CONTACT STYLES *****/
+
+.contact-img {
+	width: 100%;
+	padding-top: 20px;
+}
+
+#contact .contact-info {
+	display: flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	width: 100%;
+	flex-direction: column;
+	text-align: center;
+	color: #fff;
+}
+
+.email {
+	text-decoration: none;
+	color: #95ff78;
+}
+
+.envelope {
+	margin-right: 2%;
+}
+
+.social-media {
+	display: flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	width: 100%;
+	flex-direction: row;
+	flex-wrap: no-wrap;
+}
+
+.social-media ul {
+	display: flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.social-media ul li {
+	list-style: none;
+	margin-right: 5%;
+}
+
+/***** FOOTER *****/
+
+footer {
+	padding: 30px 0;
+}
+
+footer h3 {
+	text-align: center;
+	color: #fff;
+	font-size: .75em;
+}
+
+/*
+==========================================================================
+PORTFOLIO PAGE STYLES - MOBILE
+==========================================================================
+*/
+
+/***** HEADER *****/
+
+.pp-header {
+	border-bottom: 5px solid #808181;
+}
+
+/***** PORTFOLIO PIECE *****/
+
+#portfolio-page h1 {
+	text-align: center;
+	color: #fff;
+}
+
+#portfolio-page p {
+	color: #fff;
+}
+
+#portfolio-page .portfolio-image {
+	display: flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	width: 100%;
+	flex-direction: column; 
+}
+
+#portfolio-page .pp-flex-pics {
+	display: flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	width: 100%;
+	justify-content: center;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
