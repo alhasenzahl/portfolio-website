@@ -117,6 +117,7 @@ BASIC STYLES
 html, body {
 	font-size: 16px;
 	background-color: #2e2e2e;
+	font-family: Kreon, serif;
 }
 
 .full-width {
@@ -139,8 +140,16 @@ MOBILE STYLES
 nav ul li {
 	list-style: none;
 	text-align: center;
-	font-size: 1.25em;
+	font-size: 1.5em;
+	margin-left: -40px;
+	line-height: 1.75em;
+	border-bottom: 1px solid #808181;
+	font-family: Just Another Hand, sans-serif;
 }
+
+	nav ul li:nth-child(1) {
+		border-top: 1px solid #808181;
+	}
 
 nav ul li a {
 	color: #fff;
@@ -154,11 +163,14 @@ nav ul li a:hover {
 
 .hustle-img {
 	width: 100%;
+	margin-top: -16px;
 }
 
 header h2 {
 	color: #fff;
 	padding-bottom: 10px;
+	font-family: Londrina Solid, sans-serif;
+	font-weight: 300;
 }
 
 header h2 span {
@@ -170,15 +182,22 @@ header h2 span {
 #about {
 	background-color: #fff;
 	margin-bottom: -20px;
-	padding: 5px 0 20px 0;
+	padding: 5px 0 40px 0;
 }
 
-#about .half-width {
+#about h1 {
+	font-family: Londrina Solid;
+	font-weight: 400;
+	font-size: 2em;
+}
+
+#about .flex-paragraphs {
 	display: flex;
 	display: -webkit-box;
 	display: -moz-box;
 	display: -ms-flexbox;
 	display: -webkit-flex;
+	flex-direction: column;
 	width: 100%;
 }
 
@@ -190,49 +209,36 @@ header h2 span {
 	display: -webkit-flex;
 	justify-content: flex-start;
 	width: 100%;
-	font-size: .875em;
+	font-size: .9em;
+	color: #808181;
 }
 
 /***** PORTFOLIO STYLES *****/
 
 #work {
 	background-color: #95ff78;
+	padding: 20px 0
 }
 
-#work .des-head {
-	padding-top: 20px;
+.des-head, .dev-head {
+	font-family: Londrina Solid;
+	font-weight: 400;
+	font-size: 2em
 }
 
-#work .design-portfolio, #work .developer-portfolio {
-	display: flex;
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
+#work img {
 	width: 100%;
-	flex-direction: column;
-}
-
-#work .design-portfolio .flex-pics, #work .developer-portfolio .flex-pics {
-	display: flex;
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	width: 100%;
-	justify-content: center;
-}
-
-#work .design-portfolio .flex-pics img, #work .developer-portfolio .flex-pics img {
-	max-width: 500px;
 	margin-bottom: 3%;
 }
 
 /***** CONTACT STYLES *****/
 
+#contact {
+	padding: 30px 0;
+}
+
 .contact-img {
 	width: 100%;
-	padding-top: 20px;
 }
 
 #contact .contact-info {
@@ -247,6 +253,16 @@ header h2 span {
 	color: #fff;
 }
 
+.header-1, .header-2, .header-3 {
+	font-family: Londrina Solid;
+	font-weight: 300;
+	font-size: 1.5em;
+}
+
+.header-2 {
+	margin-top:  -15px;
+}
+
 .email {
 	text-decoration: none;
 	color: #95ff78;
@@ -254,6 +270,14 @@ header h2 span {
 
 .envelope {
 	margin-right: 2%;
+}
+
+.email, .envelope {
+	margin-top: -7px;
+}
+
+.header-3 {
+	margin-top: 45px;
 }
 
 .social-media {
@@ -265,6 +289,7 @@ header h2 span {
 	width: 100%;
 	flex-direction: row;
 	flex-wrap: no-wrap;
+	margin-top: -15px;
 }
 
 .social-media ul {
@@ -286,12 +311,15 @@ header h2 span {
 
 footer {
 	padding: 30px 0;
+	border-top: 1px solid #808181;
 }
 
 footer h3 {
 	text-align: center;
 	color: #fff;
 	font-size: .75em;
+	font-weight: 200;
+	font-family: Kreon;
 }
 
 /*
@@ -306,35 +334,67 @@ PORTFOLIO PAGE STYLES - MOBILE
 	border-bottom: 5px solid #808181;
 }
 
+.pp-header #logo {
+	width: 100%;
+}
+
 /***** PORTFOLIO PIECE *****/
 
 #portfolio-page h1 {
 	text-align: center;
 	color: #fff;
+	font-family: Londrina Solid;
+	letter-spacing: 1px;
+	font-weight: 300;
 }
 
 #portfolio-page p {
 	color: #fff;
+	padding-bottom: 100px;
+	font-family: Kreon;
 }
 
-#portfolio-page .portfolio-image {
-	display: flex;
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
+#portfolio-page img {
 	width: 100%;
-	flex-direction: column; 
+	height: 100%;
+	margin-bottom: 3%;
 }
 
-#portfolio-page .pp-flex-pics {
-	display: flex;
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
+/***** SOCIAL SECTION *****/
+
+#portfolio-social {
+	padding: 100px 0 30px 0;
+}
+
+/*
+==========================================================
+Blog Index Page - Mobile
+==========================================================
+*/
+
+/***** HEADER *****/
+
+.blog-header {
+	border-bottom: 5px solid #808181;
+}
+
+.blog-header #logo {
 	width: 100%;
-	justify-content: center;
+}
+
+/***** MAIN *****/
+
+#blog-main {
+	padding: 200px 0;
+}
+
+#blog-main h1 {
+	text-align: center;
+	color: #fff;
+	font-family: Londrina Solid;
+	letter-spacing: 1px;
+	font-weight: 300;
+	font-size: 2.5em;
 }
 
 /* ==========================================================================
@@ -417,8 +477,430 @@ PORTFOLIO PAGE STYLES - MOBILE
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+    
+/*
+========================================================
+TABLET STYLES HERE
+========================================================
+*/
+
+/***** HEADER STYLES *****/
+
+header {
+	background:url(../img/hustle.jpg) no-repeat center;
+	background-size: cover;
+	margin-top: -16px;
+	padding-bottom: 200px;
+}
+
+#logo {
+	width: 25%;
+	float: left;
+}
+
+.hustle-img {
+	display: none;
+}
+
+nav ul {
+	float: right;
+	width: 65%;
+	padding-top: 10%;
+}
+
+nav ul li {
+	display: inline;
+	font-size: 1.125em;
+	padding-right: 3%;
+	font-weight: 300;
+	border-bottom: none;
+	line-height: 0;
+	margin-left: 0px;
+}
+
+nav ul li:nth-child(1) {
+	padding-left: 54%;
+	border-top: none;
+}
+
+header h2 {
+	padding-top: 100px;
+	clear: both;
+	width: 85%;
+	font-size: 2em;
+	font-weight: 400;
+	letter-spacing: 1px;
+	margin-left: 11%;
+	text-align: right;
+}
+
+header h2 span {
+	color: #95ff78;
+}
+
+/***** ABOUT ME STYLES *****/
+
+#about {
+	margin-top: -26px;
+	padding-top: 15px;
+	padding-bottom: 45px
+}
+
+#about .flex-paragraphs {
+	width: 100%;
+	justify-content: space-between;
+	flex-direction: row;
+}
+
+#about .paragraph {
+	width: 94%;
+	justify-content: center;
+	font-size: 1em;
+}
+
+/***** PORTFOLIO STYLES *****/
+
+#work {
+	padding-bottom: 40px;
+}
+
+#work #design-portfolio, #work #developer-portfolio {
+	display: flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+#work #design-portfolio .flex-pics, #work #developer-portfolio .flex-pics {
+	display: flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	width: 49%;
+}
+
+/***** CONTACT STYLES *****/
+
+#contact {
+	padding: 50px 0;
+}
+
+.flex-contact {
+	display: flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	width: 95%;
+	padding-left: 5%;
+}
+
+.contact-img {
+	height: 100%;
+}
+
+#contact .contact-info {
+	display: flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	text-align: left;
+	width: 100%;
+	padding-left: 5%;
+}
+
+#contact .header-1 {
+	margin-top: 3%;
+}
+
+#contact .header-2 {
+	margin-top: -4%;
+}
+
+#contact .header-3 {
+	margin: 8% 0 -1% 0;
+}
+
+.social-media {
+	margin-top: 0;
+}
+
+.social-media ul {
+	justify-content: flex-start;
+	width: 100%;
+}
+
+#contact .full-width {
+	display: flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	width: 100%;
+	justify-content: space-between;
+	margin-left: 0;
+}
+
+#contact .half-width {
+	display: flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	width: 50%;
+	overflow: hidden;
+}
+
+/*
+==================================================
+PORTFOLIO PAGE STYLES - TABLET 
+==================================================
+*/
+
+/***** HEADER *****/
+
+.pp-header {
+	background-color: #2e2e2e;
+	background-image: none;
+	padding-bottom: 0;
+}
+
+.pp-header .full-width {
+	display: flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	justify-content: center;
+}
+
+.pp-header .half-width {
+	display: flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	justify-content: center;
+}
+
+.pp-header #logo {
+	float: none;
+}
+
+.pp-header #logo img {
+	max-width: 200px;
+}
+
+.pp-header a {
+	width: 25%;
+	height: 100%;	
+}
+
+/***** PORTFOLIO SECTION *****/
+
+#portfolio-page h1 {
+	font-size: 2.25em;
+}
+
+.flex-description {
+	display: flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	width: 100%;
+	justify-content: center;
+}
+
+.description {
+	width: 75%;
+	display: flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	font-size: 1.125em;
+}
+
+#portfolio-page .portfolio-image {
+	display: flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	width: 100%;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#portfolio-page .pp-flex-pics, #portfolio-page .pp-flex-pics a {
+	display: flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	width: 100%;
+	justify-content: center;
+}
+
+#portfolio-page img {
+	width: 75%;
+}
+
+/***** CONTACT *****/
+
+#portfolio-social .social-media {
+	margin-left: 0;
+}
+
+#portfolio-social .social-media ul {
+	justify-content: center;
+}
+
+/***** FOOTER *****/
+
+footer h3 {
+	font-size: .9em;
+}
+
+/*
+===================================================================
+BLOG HOMEPAGE - TABLET
+===================================================================
+*/
+
+/***** HEADER *****/
+
+.blog-header {
+	background-color: #2e2e2e;
+	background-image: none;
+	padding-bottom: 0;
+}
+
+.blog-header .full-width {
+	display: flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	justify-content: center;
+}
+
+.blog-header .half-width {
+	display: flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	justify-content: center;
+}
+
+.blog-header #logo {
+	float: none;
+}
+
+.blog-header #logo img {
+	max-width: 200px;
+}
+
+.blog-header a {
+	width: 25%;
+	height: 100%;	
+}
+
+/***** MAIN *****/
+
+#blog-main {
+	padding: 300px 0;
+}
+
+#blog-main h1 {
+	font-size: 4em;
+}
+
+}
+
+@media only screen and (min-width: 940px) {
+
+/*
+====================================================================
+DESKTOP STYLES - HOMEPAGE
+====================================================================
+*/
+
+/***** HEADER *****/
+
+nav ul li {
+	font-size: 1.25em;
+}
+
+nav ul li:nth-child(1) {
+	padding-left: 60%;
+}
+
+header h2 {
+	font-size: 2.5em;
+}
+
+/***** ABOUT ME *****/
+
+#about {
+	padding-bottom: 50px;
+}
+
+#about h1 {
+	font-size: 2.5em;
+}
+
+#about p {
+	font-size: 1.125em;
+}
+
+/***** PORTFOLIO *****/
+
+#work {
+	padding-bottom: 50px;
+	padding-top: 30px;
+}
+
+#work #developer-portfolio, #work #design-portfolio {
+	justify-content: flex-start;
+}
+
+#work #design-portfolio .flex-pics, #work #developer-portfolio .flex-pics {
+	width: 32%;
+	margin-right: 1%;
+}
+
+/***** CONTACT *****/
+
+.contact-img {
+	max-width: 750px;
+}
+
+#contact .contact-info {
+	padding-left: 12%;
+}
+
+#contact .header-1 {
+	margin-top: 6%;
+}
+
+.email {
+	font-size: 1.25em
+}
+
+.header-1, .header-2, .header-3 {
+	font-size: 1.75em;
+}
+
 }
 
 @media print,
