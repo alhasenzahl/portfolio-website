@@ -220,7 +220,7 @@ header h2 span {
 	padding: 20px 0
 }
 
-.des-head, .dev-head {
+.dev-head {
 	font-family: Londrina Solid;
 	font-weight: 400;
 	font-size: 2em
@@ -565,7 +565,7 @@ header h2 span {
 	padding-bottom: 40px;
 }
 
-#work #design-portfolio, #work #developer-portfolio {
+#work #developer-portfolio {
 	display: flex;
 	display: -webkit-box;
 	display: -moz-box;
@@ -576,7 +576,7 @@ header h2 span {
 	justify-content: space-between;
 }
 
-#work #design-portfolio .flex-pics, #work #developer-portfolio .flex-pics {
+#work #developer-portfolio .flex-pics {
 	display: flex;
 	display: -webkit-box;
 	display: -moz-box;
@@ -870,11 +870,11 @@ header h2 {
 	padding-top: 30px;
 }
 
-#work #developer-portfolio, #work #design-portfolio {
+#work #developer-portfolio {
 	justify-content: flex-start;
 }
 
-#work #design-portfolio .flex-pics, #work #developer-portfolio .flex-pics {
+#work #developer-portfolio .flex-pics {
 	width: 32%;
 	margin-right: 1%;
 }
